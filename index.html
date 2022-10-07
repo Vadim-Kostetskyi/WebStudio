@@ -8,117 +8,143 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <!-- Top line -->
-        <nav>
-            <a href="">WebStudio</a>
-            <ul>                
-                <li><a href="">Студія</a></li>
-                <li><a href="">Портфоліо</a></li>
-                <li><a href="">Контакти</a></li>
+        <a class="logo" href="">WebStudio</a>
+        <nav class="nav">            
+            <ul class="list">                
+                <li class="list-item"><a class="link" href="../DZz/index.html">Студія</a></li>
+                <li class="list-item"><a class="link" href="../DZz/portfolio.html">Портфоліо</a></li>
+                <li class="list-item"><a class="link" href="">Контакти</a></li>
                 
             </ul>  
         </nav>         
-        <ul>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="contact" >
+            <li class="contact-item" ><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="contact-item" ><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>   
     </header>    
     <main>
         <!-- Grey line -->
-        <section>
-            <h1>Ефективні рішення для <br> вашого бізнесу</h1>
-            <button type="button">Замовити послугу</button>
+        <section class="section">
+            <h1 class="main-title">Ефективні рішення для <br> вашого бізнесу</h1>
+            <button class="btm" type="button">Замовити послугу</button>
         </section>
         <!-- Якості команії -->
-        <section>
-            <h2>Якості команії</h2>
-            <ul>
-                <li>
-                    <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p>
+        <section class="section">
+            <h2 class="subject" >Якості команії</h2>
+            <ul class="list">
+                <li class="list-item">
+                    <h3 class="subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p class="text">
                         Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                     </p>
                 </li>
-                <li>
-                    <h3>ПУНКТУАЛЬНІСТЬ</h3>
-                    <p>
+                <li class="list-item">
+                    <h3 class="subtitle" >ПУНКТУАЛЬНІСТЬ</h3>
+                    <p class="text">
                         Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                     </p>
                 </li>
-                <li>
-                    <h3>ПЛАНУВАННЯ</h3>
-                    <p>
+                <li class="list-item">
+                    <h3 class="subtitle" >ПЛАНУВАННЯ</h3>
+                    <p class="text">
                         Так само консультація з широким активом значною мірою зумовлює.
                     </p>
                 </li>
-                <li>
-                    <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p>
+                <li class="list-item">
+                    <h3 class="subtitle" >СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <p class="text">
                         Значимість цих проблем настільки очевидна, що реалізація планових завдань.
                     </p>
                 </li>
-            </ul>                
+            </ul>
         </section>
         <!-- Чим ми займаємося -->
-        <section>
-            <h2>Чим ми займаємося</h2>
-            <ul>
-                <li>
-                    <img src="./imges/comp.jpg" alt="дівчина переписує код з планшета на комп'ютер" width="370" height="295">
+        <section class="section" >
+            <h2 class="subject">Чим ми займаємося</h2>
+            <ul class="list">
+                <li class="list-item">
+                    <img class="img"
+                    src="./imges/Studio/comp.jpg"
+                    alt="дівчина переписує код з планшета на комп'ютер"
+                    width="370"
+                    height="295">
                 </li>
-                <li>
-                    <img src="./imges/mobile.jpg" alt="стіл з комп'ютером, в дівчачих руках телефон" width="370" height="295">
+                <li class="list-item">
+                    <img class="img"
+                    src="./imges/Studio/mobile.jpg"
+                    alt="стіл з комп'ютером, в дівчачих руках телефон"
+                    width="370"
+                    height="295">
                 </li>
-                <li>
-                        <img src="./imges/laptop.jpg" alt="стіл з комп'ютером, в дівчачих руках планщет" width="370" height="295">
+                <li class="list-item">
+                    <img class="img"
+                    src="./imges/Studio/laptop.jpg"
+                    alt="стіл з комп'ютером, в дівчачих руках планшет"
+                    width="370"
+                    height="295">
                 </li>
             </ul>
         </section>
         <!-- Наша команда -->
-        <section>
-            <h2>Наша команда</h2>
-            <ul>
-                <li>
-                    <figure>
-                        <img src="./imges/humans/igor.jpg" alt="фото Ігора Дем'яненка" width="270" height="260">
-                        <figcaption>  Ігор Дем'яненко Product Designer </figcaption>
-                    </figure> 
+        <section class="section">
+            <h2 class="subject">Наша команда</h2>
+            <ul class="list">
+                <li class="list-item">
+                    <img class="img"
+                    src="./imges/humans/igor.jpg"
+                    alt="фото Ігора Дем'яненка"
+                    width="270"
+                    height="260">
+                    <h3 class="team-name">Ігор Дем'яненко</h3>
+                    <p class="team-position">Product Designer</p>
                 </li>
-                <li>
-                    <figure>
-                        <img src="./imges/humans/ola.jpg" alt="фото Огльги Рэпіної" width="270" height="260">
-                        <figcaption> Ольга Рєпіна Frontend Developer</figcaption>
-                    </figure>     
+                <li class="list-item">
+                      <img class="img"
+                    src="./imges/humans/ola.jpg"
+                    alt="фото Огльги Рэпіної"
+                    width="270"
+                    height="260">
+                    <h3 class="team-name">Ольга Рєпіна</h3>
+                    <p class="team-position">Frontend Developer</p>
                 </li>
-                <li>
-                    <figure>
-                        <img src="./imges/humans/kola.jpg" alt="фото Миколи Тарасова" width="270" height="260">
-                        <figcaption>Микола Тарасов Marketing</figcaption>
-                    </figure>
+                <li class="list-item">
+                    <img class="img"
+                    src="./imges/humans/kola.jpg"
+                    alt="фото Миколи Тарасова"
+                    width="270"
+                    height="260">
+                    <h3 class="team-name">Микола Тарасов</h3>
+                    <p class="team-position">Marketing</p>
                 </li>
-                <li>
-                    <figure>
-                        <img src="./imges/humans/misha.jpg" alt="фото Михайла Єрмакова" width="270" height="260">
-                        <figcaption>Михайло Єрмаков UI Designer</figcaption>
-                    </figure>
+                <li class="list-item">
+                <img class="img"
+                src="./imges/humans/misha.jpg"
+                alt="фото Михайла Єрмакова"
+                width="270"
+                height="260">
+                <h3 class="team-name">Михайло Єрмаков</h3>
+                <p class="team-position">UI Designer</p>
                 </li>
-            </ul>  
-        </section>              
+            </ul>
+        </section>
     </main>
     <footer>
-        <!-- Contacts -->        
-        <a href="">WebStudio</a>
-        <address>
-            <ul>
-                <li>
-                    <a href="https://www.google.com/maps" target="_blank"  rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+        <!-- Contacts -->
+        <a class="logo" href="">WebStudio</a>
+        <address class="contact-adress">
+            <ul class="list">
+                <li class="list-item">
+                    <a class="link" href="https://goo.gl/maps/AJjKiDTqGFU6U2n89"
+                    target="_blank"
+                    rel="noopener noreferrer"> м. Київ, пр-т Лесі Українки, 26</a>
                 </li>
-                <li>
-                   <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <li class="list-item">
+                   <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li>
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="list-item">
+                    <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul> 
         </address>        
