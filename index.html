@@ -1,16 +1,9 @@
 <!DOCTYPE html>
-<html lang="en ua">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
     <title>Document</title>
     <link
       rel="stylesheet"
@@ -19,74 +12,83 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="section header">
       <!-- Top line -->
       <div class="container container-header">
         <div class="container-top">
-          <a class="link logo" href="index.html"> <span class="logo-web">Web</span>Studio</a>
+          <a class="link logo" href="index.html" lang="en">
+            Web<span class="logo-header">Studio </span></a
+          >
           <nav class="nav">
             <ul class="nav-list list">
-              <li class="nav-list-item">
-                <a class="link active" href="index.html">Студія</a>
+              <li class="nav-item">
+                <a class="link nav-link active" href="index.html">Студія</a>
               </li>
-              <li class="nav-list-item">
-                <a class="link noactive" href="portfolio.html">Портфоліо</a>
+              <li class="nav-item">
+                <a class="link nav-link noactive" href="portfolio.html">Портфоліо</a>
               </li>
-              <li class="nav-list-item">
-                <a class="link noactive" href="">Контакти</a>
+              <li class="">
+                <a class="link nav-link noactive" href="">Контакти</a>
               </li>
             </ul>
           </nav>
         </div>
-        <ul class="contact list">
-          <li class="contact-item">
-            <a class="link contact-item-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-item-tel">
-            <a class="link contact-item-link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        <div class="contact">
+          <ul class="contact-lists list">
+            <li class="contact-item">
+              <a class="link contact-link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="contact-tel">
+              <a class="link contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <!-- Grey line -->
-      <section class="container section main">
-        <h1 class="main-title">
-          Ефективні рішення для <br />
-          вашого бізнесу
-        </h1>
-        <button class="btn main-btm" type="button">Замовити послугу</button>
+      <section class="section main">
+        <div class="container container-main">
+          <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="btn main-btm" type="button">Замовити послугу</button>
+        </div>
       </section>
       <!-- Якості команії -->
       <section class="section quality">
-        <!-- <h2 class="subject" >Якості команії</h2> -->
+        <h2 class="subject">Якості команії</h2>
         <ul class="container quality-list list">
-          <li class="quality-list-item">
-            <h3 class="quality-list-subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="quality-list-text">
+          <li class="quality-item">
+            <h3 class="quality-subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="quality-text">
               Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
             </p>
           </li>
-          <li class="quality-list-item">
-            <h3 class="quality-list-subtitle">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="quality-list-text">
+          <li class="quality-item">
+            <h3 class="quality-subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="quality-text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
             </p>
           </li>
-          <li class="quality-list-item">
-            <h3 class="quality-list-subtitle">ПЛАНУВАННЯ</h3>
-            <p class="quality-list-text">
+          <li class="quality-item">
+            <h3 class="quality-subtitle">ПЛАНУВАННЯ</h3>
+            <p class="quality-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="quality-list-item">
-            <h3 class="quality-list-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="quality-list-text">
+          <li class="">
+            <h3 class="quality-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="quality-text">
               Значимість цих проблем настільки очевидна, що реалізація планових завдань.
             </p>
           </li>
@@ -126,60 +128,62 @@
         </ul>
       </section>
       <!-- Наша команда -->
-      <section class="container section team">
-        <h2 class="team-subject">Наша команда</h2>
-        <ul class="team-list">
-          <li class="list team-list-item">
-            <img
-              class="team-img"
-              src="./imges/humans/igor.jpg"
-              alt="фото Ігора Дем'яненка"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-name">Ігор Дем'яненко</h3>
-            <p class="team-position">Product Designer</p>
-          </li>
-          <li class="list team-list-item">
-            <img
-              class="team-img"
-              src="./imges/humans/ola.jpg"
-              alt="фото Огльги Рэпіної"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-name">Ольга Рєпіна</h3>
-            <p class="team-position">Frontend Developer</p>
-          </li>
-          <li class="list team-list-item">
-            <img
-              class="team-img"
-              src="./imges/humans/kola.jpg"
-              alt="фото Миколи Тарасова"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-name">Микола Тарасов</h3>
-            <p class="team-position">Marketing</p>
-          </li>
-          <li class="list team-list-item">
-            <img
-              class="team-img"
-              src="./imges/humans/misha.jpg"
-              alt="фото Михайла Єрмакова"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-name">Михайло Єрмаков</h3>
-            <p class="team-position">UI Designer</p>
-          </li>
-        </ul>
+      <section class="section team">
+        <div class="container container-team">
+          <h2 class="team-subject">Наша команда</h2>
+          <ul class="team-list">
+            <li class="list team-item">
+              <img
+                class="team-img"
+                src="./imges/humans/igor.jpg"
+                alt="фото Ігора Дем'яненка"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Ігор Дем'яненко</h3>
+              <p class="team-position" lang="en">Product Designer</p>
+            </li>
+            <li class="list team-item">
+              <img
+                class="team-img"
+                src="./imges/humans/ola.jpg"
+                alt="фото Огльги Рэпіної"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Ольга Рєпіна</h3>
+              <p class="team-position" lang="en">Frontend Developer</p>
+            </li>
+            <li class="list team-item">
+              <img
+                class="team-img"
+                src="./imges/humans/kola.jpg"
+                alt="фото Миколи Тарасова"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Микола Тарасов</h3>
+              <p class="team-position" lang="en">Marketing</p>
+            </li>
+            <li class="list team-item-last">
+              <img
+                class="team-img"
+                src="./imges/humans/misha.jpg"
+                alt="фото Михайла Єрмакова"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-name">Михайло Єрмаков</h3>
+              <p class="team-position" lang="en">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="section footer">
       <!-- Contacts -->
-      <div>
-        <a class="link logo-footer" href="index.html"> <span class="logo-web">Web</span>Studio</a>
+      <div class="conteiner">
+        <a class="link logo" href="index.html"> Web <span class="logo-footer">Studio</span></a>
         <address class="contacts">
           <ul class="contacts-list">
             <li class="list contacts-list-item">
@@ -192,10 +196,12 @@
                 м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li class="list contacts-list-item">
-              <a class="link contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="list contacts-item">
+              <a class="link contacts-link" href="mailto:info@devstudio.com" lang="en"
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="list contacts-list-item">
+            <li class="list contac-item">
               <a class="link contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
