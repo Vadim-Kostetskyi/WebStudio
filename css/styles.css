@@ -1,4 +1,4 @@
-:root {ee;
+:root {
   /* fonts */
   --main-font: 'Roboto', nans-serif;
 
@@ -260,7 +260,7 @@ margin-right: 50px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-bottom: 0
+  margin-bottom: 0;
   
   padding-top: 94px;
 
