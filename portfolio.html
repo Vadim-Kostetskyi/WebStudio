@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <!-- Top line -->
       <div class="container container-header">
@@ -35,9 +36,11 @@
                 <a class="link nav-link noactive" href="index.html">Студія</a>
               </li>
               <li class="nav-item">
-                <a class="link nav-link active" href="portfolio.html">Портфоліо</a>
+                <a class="link nav-link active" href="portfolio.html"
+                  >Портфоліо</a
+                >
               </li>
-              <li class="">
+              <li class="nav-item">
                 <a class="link nav-link noactive" href="">Контакти</a>
               </li>
             </ul>
@@ -46,17 +49,31 @@
         <div class="contact">
           <ul class="contact-lists list">
             <li class="contact-mail">
-              <a class="link contact-link mail" lang="en" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a
+                class="link contact-link"
+                lang="en"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="contact-svg" width="16" height="12">
+                  <use href="./images/icons.svg#envelope-hover"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
+
             <li class="contact-tel">
-              <a class="link contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="link contact-link" href="tel:+380961111111">
+                <svg class="contact-svg" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38_096_111_11_11</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </header>
+    <!-- main -->
     <main class="portfolio">
       <section class="content">
         <ul class="container content-list">
@@ -77,69 +94,69 @@
           </li>
         </ul>
 
-        <ul class="container content-units content-links">
-          <li class="list units-list">
-            <img class="content-link" src="./imges/portpholio/comp.jpg" alt="Ноутбук" />
+        <ul class="container content-units">
+          <li class="list units-list card-set">
+            <img class="content-link" src="./images/portpholio/comp.jpg" alt="Ноутбук" />
             <div class="units-item">
               <h2 class="content-name">Технокряк</h2>
               <p class="content-subname">Веб-сайт</p>
             </div>
           </li>
-          <li class="list units-list">
+          <li class="list units-list card-set">
             <img
               class="content-link"
-              src="./imges/portpholio/basket.jpg"
+              src="./images/portpholio/basket.jpg"
               alt="Два гравця в баскетбол"
             />
-            <div class="units-item">
+            <div class="units-item card-set">
               <h2 class="content-name">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
               <p class="content-subname">Дизайн</p>
             </div>
           </li>
-          <li class="list units-list">
-            <img class="content-link" src="./imges/portpholio/seabood.jpg" alt="Мертва риба" />
+          <li class="list units-list card-set">
+            <img class="content-link" src="./images/portpholio/seabood.jpg" alt="Мертва риба" />
             <div class="units-item">
               <h2 class="content-name">Ресторан <span lang="en">Seafood</span></h2>
               <p class="content-subname">Додаток</p>
             </div>
           </li>
-          <li class="list units-list">
-            <img class="content-link" src="./imges/portpholio/headphones.jpg" alt="Навушники" />
+          <li class="list units-list card-set">
+            <img class="content-link" src="./images/portpholio/headphones.jpg" alt="Навушники" />
             <div class="units-item">
               <h2 class="content-name">Проєкт <span lang="en">Prime</span></h2>
               <p class="content-subname">Маркетинг</p>
             </div>
           </li>
-          <li class="list units-list">
-            <img class="content-link" src="./imges/portpholio/box.jpg" alt="Дві коробки" />
+          <li class="list units-list card-set">
+            <img class="content-link" src="./images/portpholio/box.jpg" alt="Дві коробки" />
             <div class="units-item">
               <h2 class="content-name">Проєкт <span lang="en">Boxes</span></h2>
               <p class="content-subname">Додаток</p>
             </div>
           </li>
-          <li class="list units-list">
-            <img class="content-link" src="./imges/portpholio/mon.jpg" alt="Монітор" />
+          <li class="list units-list card-set">
+            <img class="content-link" src="./images/portpholio/mon.jpg" alt="Монітор" />
             <div class="units-item">
               <h2 class="content-name" lang="en">Inspiration has no Borders</h2>
               <p class="content-subname">Веб-сайт</p>
             </div>
           </li>
-          <li class="list units-list">
-            <img class="content-link" src="./imges/portpholio/book.jpg" alt="Відкрита книга" />
+          <li class="list units-list card-set">
+            <img class="content-link" src="./images/portpholio/book.jpg" alt="Відкрита книга" />
             <div class="units-item">
               <h2 class="content-name">Видання <span lang="en">Limited Edition</span></h2>
               <p class="content-subname">Дизайн</p>
             </div>
           </li>
-          <li class="list units-list">
-            <img class="content-link" src="./imges/portpholio/lab.jpg" alt="Бумажка з написом" />
+          <li class="list units-list card-set">
+            <img class="content-link" src="./images/portpholio/lab.jpg" alt="Бумажка з написом" />
             <div class="units-item">
               <h2 class="content-name">Проєкт <span lang="en">LAB</span></h2>
               <p class="content-subname">Маркетинг</p>
             </div>
           </li>
-          <li class="list units-list">
-            <img class="content-link" src="./imges/portpholio/laptop.jpg" alt="Ноутбук" />
+          <li class="list units-list card-set">
+            <img class="content-link" src="./images/portpholio/laptop.jpg" alt="Ноутбук" />
             <div class="units-item">
               <h2 class="content-name" lang="en">Growing Business</h2>
               <p class="content-subname">Додаток</p>
@@ -149,32 +166,98 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="section footer">
+    <footer class="footer">
       <!-- Contacts -->
-      <div class="conteiner">
-        <a class="link logo" href="index.html"> Web <span class="logo-footer">Studio</span></a>
-        <address class="contacts">
-          <ul class="contacts-list">
-            <li class="list contacts-list-item">
+      <div class="container footer-all">
+        <div class="footer-item">
+          <a class="link logo logo-footer" href="index.html">
+            Web<span class="logo-footer-item">Studio</span></a
+          >
+          <address class="contacts">
+            <ul class="contacts-list">
+              <li class="list contact-item">
+                <a
+                  class="link adress"
+                  href="https://goo.gl/maps/AJjKiDTqGFU6U2n89"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="list contact-item">
+                <a
+                  class="link contacts-link"
+                  href="mailto:info@devstudio.com"
+                  lang="en"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="list contac-item">
+                <a class="link contacts-link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <p class="footer-text">приєднуйтесь</p>
+          <ul class="social">
+            <li class="list social-item footer-social-item">
               <a
-                class="link adress"
-                href="https://goo.gl/maps/AJjKiDTqGFU6U2n89"
+                class="social-link footer-link"
+                href="https://www.instagram.com"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferer noopener nofollow"
+                aria-label="instagram"
               >
-                м. Київ, пр-т Лесі Українки, 26</a
-              >
+                <svg class="social-icon footer-icon">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="list contacts-item">
-              <a class="link contacts-link" href="mailto:info@devstudio.com" lang="en"
-                >info@devstudio.com</a
+            <li class="list social-item footer-social-item">
+              <a
+                class="social-link footer-link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferer noopener nofollow"
+                aria-label="twitter"
               >
+                <svg class="social-icon footer-icon">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="list contac-item">
-              <a class="link contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="list social-item footer-social-item">
+              <a
+                class="social-link footer-link"
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noreferer noopener nofollow"
+                aria-label="facebook"
+              >
+                <svg class="social-icon footer-icon">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list social-item footer-social-item">
+              <a
+                class="social-link footer-link"
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noreferer noopener nofollow"
+                aria-label="linkedin"
+              >
+                <svg class="social-icon footer-icon">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
