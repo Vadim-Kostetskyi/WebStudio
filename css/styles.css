@@ -20,6 +20,7 @@
   --items: 3;
 
   /* other */
+  --transition-delay: 250ms;
 }
 
 h1,
@@ -84,9 +85,6 @@ img {
   display: block;
 }
 
-.card-set {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-}
 .social {
   justify-content: center;
 }
@@ -110,10 +108,13 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--active-color);
+  transition: background-color var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: var(--white-color);
+  transition: fill var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 
 /* header */
@@ -154,10 +155,28 @@ img {
 .nav-link {
   padding-top: 32px;
   padding-bottom: 32px;
+  position: relative;
 }
 .nav-link:focus,
 .nav-link:hover {
   color: var(--active-color);
+  transition: color var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  background-color: var(--active-color);
+  border-radius: 2px;
+  bottom: 0;
+  left: 0;
+}
+.active::after {
+  content: "";
+  width: 100%;
 }
 .contact-link {
   display: flex;
@@ -177,15 +196,18 @@ img {
 .contact-link:focus,
 .contact-link:hover {
   color: var(--active-color);
+   transition: color var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-svg {
   justify-items: center;
   align-content: center;
   margin-right: 10px;
+  fill: var(--green-color);
 }
 .contact-link:focus .contact-svg,
 .contact-link:hover .contact-svg {
   fill: var(--active-color);
+    transition: fill var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav {
   display: flex;
@@ -251,8 +273,10 @@ img {
 .main-btm:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #188ae8c7;
+    transition: box-shadow var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1),
+    background-color var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-btm:active{
+.main-btm:active {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #188ce8;
 }
@@ -268,7 +292,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
@@ -406,9 +430,12 @@ img {
   padding-bottom: 56px;
 }
 
+.content-link {
+  width: 100%;
+}
+
 .content-btn {
   border-radius: 4px;
-  color: var(--text);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -427,12 +454,32 @@ img {
 }
 .content-btn:focus,
 .content-btn:hover {
-  background: var(--active-color);
+  background-color: var(--active-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border-color: var(--background-clip);
   color: var(--white-color);
+    transition: background-color var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1),
+    border-color var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1),
+    color var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.offers{
+  text-align: center;
+
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .content-units {
   flex-wrap: wrap;
@@ -453,10 +500,14 @@ img {
   background-color: var(--white-color);
   color: var(--green-color);
 }
+.units-list{
+  flex-basis: calc((100% - (var(--items)) * (var(--indent) - 1)) / var(--items));
+}
 .units-list:hover,
 .units-list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .units-item {
   border: 1px solid #eeeeee;
@@ -489,9 +540,13 @@ img {
 .clients-item:hover,
 .clients-item:focus {
   border-color: var(--active-color);
+   transition: border-color var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .clients-item:hover .clients-logo {
   fill: var(--active-color);
+    transition: fill var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .clients-logo {
   fill: var(--grayly);
@@ -512,6 +567,7 @@ img {
 .footer-all {
   display: flex;
   justify-content: flex-start;
+  align-items: baseline;
 }
 .logo-footer {
   font-family: "Raleway";
@@ -565,9 +621,12 @@ img {
 .contacts-link:focus,
 .contacts-link:hover {
   color: var(--active-color);
+    transition: color var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .footer-social {
   flex-direction: column;
+  align-items: center;
 }
 .footer-text {
   font-weight: 700;
@@ -584,4 +643,94 @@ img {
 }
 .footer-icon {
   fill: var(--white-color);
+}
+
+/* modal */
+.backdrop {
+  position: fixed;
+  z-index: 21;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: visibility 250ms, opacity 250ms;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.modal-svg {
+  width: 11px;
+  height: 11px;
+}
+
+/* overlay */
+.team-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+
+  transform: translatey(100%);
+  transition: transform var(--transition-delay);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.units-list:hover .overlay {
+  transform: translatey(0);
+    transition: transform var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.overlay-desc {
+  width: 322;
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: var(--white-color);
 }

@@ -66,7 +66,7 @@
                 <svg class="contact-svg" width="10" height="16">
                   <use href="./images/icons.svg#smartphone"></use>
                 </svg>
-                +38_096_111_11_11</a
+                +38 096 111 11 11</a
               >
             </li>
           </ul>
@@ -79,7 +79,7 @@
         <div class="main">
           <div class="container container-main">
             <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="btn main-btm" type="button">Замовити послугу</button>
+            <button class="btn main-btm" type="button" data-modal-open>Замовити послугу</button>
           </div>
         </div>
       </section>
@@ -570,5 +570,16 @@
         </div>
       </div>
     </footer>
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-svg">
+            <use href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
