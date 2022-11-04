@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -33,7 +33,7 @@
             >
             <ul class="nav-list list">
               <li class="nav-item">
-                <a class="link nav-link active" href="index.html">Студія</a>
+                <a class="link nav-link active" href="index.html">Стуія</a>
               </li>
               <li class="nav-item">
                 <a class="link nav-link noactive" href="portfolio.html"
@@ -79,13 +79,15 @@
         <div class="main">
           <div class="container container-main">
             <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="btn main-btm" type="button" data-modal-open>Замовити послугу</button>
+            <button class="btn main-btn" type="button" data-modal-open>
+              <span>Замовити послугу</span>
+            </button>
           </div>
         </div>
       </section>
       <!-- Якості команії -->
       <section class="section quality">
-        <h2 class="subject">Якості команії</h2>
+        <h2 class="hide subject">Якості команії</h2>
         <ul class="container quality-list list">
           <li class="quality-item">
             <div class="quality-ikons">
@@ -139,33 +141,48 @@
       <!-- Чим ми займаємося -->
       <section class="section activity">
         <h2 class="activity-subject">Чим ми займаємося</h2>
-        <ul class="container activity-list list">
-          <li class="list activity-list-item card-set">
-            <img
-              class="activity-img"
-              src="./images/Studio/comp.jpg"
-              alt="дівчина переписує код з планшета на комп'ютер"
-              width="370"
-              height="295"
-            />
+        <ul class="container activity-list">
+          <li class="list activity-list-item">
+            <div class="activity-box">
+              <img
+                class="activity-img"
+                src="./images/Studio/comp.jpg"
+                alt="дівчина переписує код з планшета на комп'ютер"
+                width="370"
+                height="295"
+              />
+              <div class="activity-label">
+                <p>Десктопні додатки</p>
+              </div>
+            </div>
           </li>
-          <li class="list activity-list-item card-set">
-            <img
-              class="activity-img"
-              src="./images/Studio/mobile.jpg"
-              alt="стіл з комп'ютером, в дівчачих руках телефон"
-              width="370"
-              height="295"
-            />
+          <li class="list activity-list-item">
+            <div class="activity-box">
+              <img
+                class="activity-img"
+                src="./images/Studio/mobile.jpg"
+                alt="стіл з комп'ютером, в дівчачих руках телефон"
+                width="370"
+                height="295"
+              />
+              <div class="activity-label">
+                <p>Мобільні додатки</p>
+              </div>
+            </div>
           </li>
-          <li class="list activity-list-item card-set">
-            <img
-              class="activity-img"
-              src="./images/Studio/laptop.jpg"
-              alt="стіл з комп'ютером, в дівчачих руках планшет"
-              width="370"
-              height="295"
-            />
+          <li class="list activity-list-item">
+            <div class="activity-box">
+              <img
+                class="activity-img"
+                src="./images/Studio/laptop.jpg"
+                alt="стіл з комп'ютером, в дівчачих руках планшет"
+                width="370"
+                height="295"
+              />
+              <div class="activity-label">
+                <p>Дизайнерські рішення</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -437,9 +454,10 @@
           </ul>
         </div>
       </section>
+      <!-- clients -->
       <section class="section clients">
         <div class="container">
-          <p class="clients-title">Постійні клієнти</p>
+          <h2 class="clients-title">Постійні клієнти</h2>
           <ul class="clients-list">
             <li class="clients-item">
               <a href="#"
@@ -568,9 +586,21 @@
             </li>
           </ul>
         </div>
+        <div class="mail-input">
+          <p class="mail-input-title">Підпишіться на розсилку</p>          
+          <div class="mail-input-title-item">
+            <input class="social-input" type="email" placeholder="E-mail">
+            <button class="btn send-btn" type="submit">
+                Підписатися
+                <svg class="footer-icon-send" width="20" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
-    
+
     <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -579,6 +609,66 @@
             <use href="./images/icons.svg#cross"></use>
           </svg>
         </button>
+        <form name="register-form" autocomplete="off" novalidate>
+          <strong class="form-title"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
+
+          <div class="inputs">
+            <label class="inputs-item">
+              <span class="inputs-name">Ім'я</span>
+              <input class="register-form-input" type="text" name="user-name" />
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/icons.svg#name"></use>
+              </svg>
+            </label>
+            <label class="inputs-item">
+              <span class="inputs-name">Телефон</span>
+              <input class="register-form-input" type="tel" name="user-phone" />
+              <svg class="form-icon" width="13" height="13">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </label>
+            <label class="inputs-item">
+              <span class="inputs-name">Пошта</span>
+               <input
+                class="register-form-input"
+                type="email"
+                name="user-mail"
+              />
+              <svg class="form-icon" width="15" height="12">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
+            </label>
+            <label class="inputs-item">
+              <span class="inputs-name">Коментар</span>
+              <textarea
+                class="register-form-text"
+                name="user-comment"
+                cols="30"
+                rows="10"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+          </div>
+
+          <label class="checkbox-section">
+            <input class="checkbox" type="checkbox" name="check" />
+            <div class="checkbox-area">
+              <svg class="checkbox-ikon" width="11" height="8">
+                <use href="./images/icons.svg#check"></use>
+              </svg>
+            </div>
+            <span class="checkbox-text"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#">Умови договору</a></span
+            >
+          </label>
+
+          <button class="btn form-btn" type="submit">
+            <span class="form-btn-text">Відправити</span>
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
