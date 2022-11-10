@@ -5,13 +5,9 @@
 
 .content {
   &__list {
-    justify-content: center;
     gap: 8px;
     padding-bottom: 56px;
-  }
-
-  &__link {
-    width: 100%;
+    flex-wrap: wrap;
   }
 
   &__btn {
@@ -20,6 +16,7 @@
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
+    letter-spacing: 0.03em;
     border: 0;
     background: #f5f4fa;
 
@@ -44,9 +41,14 @@
     border-color: var(--background-clip);
     color: var(--white-color);
   }
-  &__btn_usi {
+  &__btn-usi {
     padding-left: 25px;
     padding-right: 25px;
+  }
+  &__item:nth-child(3){
+    @media screen and (min-width: 457px) and (max-width: 560px) {
+      margin-right: 100px;
+    }
   }
 
   &__name {
@@ -74,6 +76,9 @@
   flex-wrap: wrap;
   padding: 0;
   gap: var(--indent);
+  padding-left: 15px;
+  padding-right: 15px; 
+  justify-content: flex-start;
 
   &__list {
     flex-basis: calc(
@@ -87,6 +92,9 @@
     transition: box-shadow var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+   &__link {
+    width: 100%;
+  }
   &__link:hover .units__overlay {
     transform: translatey(0);
   }
@@ -104,8 +112,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 370px;
-    height: 294;
+    width: 100%;
+    height: 100%;
     padding-top: 63px;
     padding-right: 24px;
     padding-bottom: 63px;
@@ -123,7 +131,7 @@
     transition: transform var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__overlay__desc {
+  &__overlay-desc {
     font-size: 18px;
     line-height: 1.56;
 
