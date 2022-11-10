@@ -8,24 +8,24 @@
   padding-bottom: 118px;
   background-color: #c4c4c4;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/Studio/mobile/bg_tel.jpg);
+    url(../images/Studio/mobile/bg_tel.jpg);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/Studio/mobile/bg_tel@2.jpg);
+      url(../images/Studio/mobile/bg_tel@2.jpg);
   }
 
   @media screen and (min-width: 768px) {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/Studio/laptop/bg_laptop.jpg);
+      url(../images/Studio/laptop/bg_laptop.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/Studio/laptop/bg_laptop@2.jpg);
+        url(../images/Studio/laptop/bg_laptop@2.jpg);
     }
   }
 
@@ -33,13 +33,13 @@
     padding-top: 200px;
     padding-bottom: 200px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/Studio/desktop/bg_desctop.jpg);
+      url(../images/Studio/desktop/bg_desctop.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/Studio/desktop/bg_desctop@2.jpg);
+        url(../images/Studio/desktop/bg_desctop@2.jpg);
     }
   }
 
