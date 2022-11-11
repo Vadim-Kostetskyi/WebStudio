@@ -82,7 +82,7 @@
   &__lists {
     flex-wrap: wrap;
     padding-top: 21px;
-    padding-bottom: 21px;
+    padding-bottom: 17px;
     width: 136px;
 
     @media screen and(min-width: 1294px) {
@@ -118,7 +118,6 @@
     @media screen and (max-width: 1200px) {
       margin-bottom: 10px;
     }
-    margin-bottom: 10px;
     @media screen and(min-width:1294px) {
       margin-right: 50px;
     }

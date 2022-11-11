@@ -15,6 +15,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 60px;
+    
+     @media screen and (max-width: 719px) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     @media screen and (min-width: 1200px) {
       gap: 0;
@@ -29,7 +34,7 @@
     // }
   }
   &__social {
-     @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       margin-right: 93px;
     }
   }
@@ -44,7 +49,7 @@
     color: var(--white-color);
     text-align: center;
 
-     //desktop
+    //desktop
     @media screen and (min-width: 1200px) {
       text-align: start;
     }
@@ -58,7 +63,7 @@
     margin-bottom: 20px;
     text-align: center;
 
-     //desktop
+    //desktop
     @media screen and (min-width: 1200px) {
       text-align: start;
     }
@@ -72,17 +77,17 @@
 .contacts {
   text-align: center;
 
-   //desktop
-    @media screen and (min-width: 1200px) {
-      text-align: start;
-    }
+  //desktop
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 
   &__item:not(:last-child) {
     margin-bottom: 8px;
 
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 9px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //   margin-bottom: 9px;
+    // }
   }
   &__link-white {
     color: var(--white-color);
@@ -109,13 +114,17 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 450px;
+  width: auto;
 
-    //desktop
-    @media screen and (min-width: 1200px) {
-      text-align: start;
-      width: 570px;
-    }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  //desktop
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    width: 570px;
+  }
 
   &__title {
     font-weight: 700;
@@ -128,8 +137,10 @@
   &__item {
     display: flex;
     outline: none;
-    flex-wrap: wrap;
     justify-content: center;
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__input {
@@ -139,16 +150,17 @@
     color: var(--white-color);
     outline: none;
     margin-bottom: 20px;
+    width: 100%;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--background-clip);
 
-      @media screen and (min-width: 450px) {
-      width: 450px;
-    }
-      //desktop
+    // @media screen and (min-width: 450px) {
+    //   width: 450px;
+    // }
+    //desktop
     @media screen and (min-width: 1200px) {
       width: 358px;
     }

@@ -55,8 +55,8 @@
     height: 11px;
     transition: fill var(--transition-delay) cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__close:focus &__close__svg,
-  &__close:hover &__close__svg {
+  &__close:focus &__close-svg,
+  &__close:hover &__close-svg {
     fill: var(--active-color);
   }
 }
