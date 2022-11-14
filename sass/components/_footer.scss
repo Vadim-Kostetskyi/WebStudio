@@ -145,7 +145,6 @@
 
   &__input {
     height: 50px;
-    margin-right: 12px;
     padding-left: 16px;
     color: var(--white-color);
     outline: none;
@@ -163,6 +162,7 @@
     //desktop
     @media screen and (min-width: 1200px) {
       width: 358px;
+      margin-right: 12px;
     }
   }
 

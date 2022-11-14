@@ -77,8 +77,94 @@
           </svg>
         </button>
       </div>
+      <!-- tel. menu -->
+    <div class="menu-tel js-menu-container">
+      <ul class="menu-tel__list list">
+        <li class="menu-tel__item akt">
+          <a class="link menu-tel__link akt" href="index.html">Стуія</a>
+        </li>
+        <li class="menu-tel__item noakt">
+          <a class="link menu-tel__link noakt" href="portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="menu-tel__item noakt">
+          <a class="link menu-tel__link noakt" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <div class="menu-tel__contact">
+        <ul class="menu-tel__contact-list list">
+          <li class="menu-tel__contact-item">
+            <a class="link menu-tel__contact-tel" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="menu-tel__contact-item">
+            <a
+              class="link menu-tel__contact-mail"
+              lang="en"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="menu-tel__social-list">
+          <li class="menu-tel__social-item">
+            <a
+              class="menu-tel__social-link menu-tel__inst link"
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferer noopener nofollow"
+              aria-label="instagram"
+              >Instagram</a
+            >
+          </li>
+          <li class="menu-tel__social-item">
+            <a
+              class="menu-tel__social-link link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferer noopener nofollow"
+              aria-label="Twitter"
+              >Twitter</a
+            >
+          </li>
+          <li class="menu-tel__social-item">
+            <a
+              class="menu-tel__social-link link"
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noreferer noopener nofollow"
+              aria-label="Facebook"
+              >Facebook</a
+            >
+          </li>
+          <li class="menu-tel__social-item">
+            <a
+              class="menu-tel__social-link link"
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferer noopener nofollow"
+              aria-label="LinkedIn"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <button class="menu-tel__close js-close-menu">
+        <svg class="menu-tel__close-button" width="19" height="19">
+          <use href="./images/icons.svg#cross"></use>
+        </svg>
+      </button>
+    </div>
+
+      
     </header>
-    <main class="mainss">
+     <main class="mainss">
       <!-- Grey line -->
       <section class="hero">
         <div class="hero__boxing">
@@ -178,7 +264,7 @@
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/Studio/desktop/comp.jpg"
+                  src="./images/Studio/desktop/mobile.jpg"
                   alt="Стіл з комп'ютером, в дівчачих руках телефон"
                 />
               </picture>
@@ -235,7 +321,6 @@
                     ./images/humans/mobile/igor.jpg   1x,
                     ./images/humans/mobile/igor@2.jpg 2x
                   "
-                  media="(min-width: 480px)"
                 />
                 <img
                   class="team__img"
@@ -321,7 +406,6 @@
                     ./images/humans/mobile/ola.jpg   1x,
                     ./images/humans/mobile/ola@2.jpg 2x
                   "
-                  media="(min-width: 480px)"
                 />
                 <img
                   class="team__img"
@@ -407,7 +491,6 @@
                     ./images/humans/mobile/kola.jpg   1x,
                     ./images/humans/mobile/kola@2.jpg 2x
                   "
-                  media="(min-width: 480px)"
                 />
                 <img
                   class="team__img"
@@ -493,7 +576,6 @@
                     ./images/humans/mobile/misha.jpg   1x,
                     ./images/humans/mobile/misha@2.jpg 2x
                   "
-                  media="(min-width: 480px)"
                 />
                 <img
                   class="team__img"
@@ -753,18 +835,21 @@
             </label>
           </div>
 
-          <label class="checkbox">
-            <input class="checkbox__section" type="checkbox" name="check" />
-            <div class="checkbox__area">
-              <svg class="checkbox__ikon" width="11" height="8">
-                <use href="./images/icons.svg#check"></use>
-              </svg>
-            </div>
-            <span class="checkbox__text"
-              >Погоджуюся з розсилкою та приймаю
-              <a class="checkbox__link" href="#">Умови договору</a></span
-            >
-          </label>
+           <div class="checkbox">
+             
+              <label class="checkbox__label">
+              <input class="checkbox__section" type="checkbox" name="check" />
+             <span class="checkbox__area">
+                <svg class="checkbox__ikon" width="11" height="8">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+             </span>
+              <span class="checkbox__text"
+                >Погоджуюся з розсилкою та приймаю
+                <a class="checkbox__link" href="#">Умови договору</a></span
+              >
+              </label>
+           </div>
 
           <button class="btn button button__signed" type="submit">
             <span class="form-btn__send">Відправити</span>
@@ -773,91 +858,12 @@
       </div>
     </div>
 
-    <!-- tel. menu -->
-    <div class="menu-tel js-menu-container">
-      <ul class="menu-tel__list list">
-        <li class="menu-tel__item akt">
-          <a class="link menu-tel__link akt" href="index.html">Стуія</a>
-        </li>
-        <li class="menu-tel__item noakt">
-          <a class="link menu-tel__link noakt" href="portfolio.html"
-            >Портфоліо</a
-          >
-        </li>
-        <li class="menu-tel__item noakt">
-          <a class="link menu-tel__link noakt" href="">Контакти</a>
-        </li>
-      </ul>
-
-      <div class="menu-tel__contact">
-        <ul class="menu-tel__contact-list list">
-          <li class="menu-tel__contact-item">
-            <a class="link menu-tel__contact-tel" href="tel:+380961111111">
-              +38 096 111 11 11</a
-            >
-          </li>
-          <li class="menu-tel__contact-item">
-            <a
-              class="link menu-tel__contact-mail"
-              lang="en"
-              href="mailto:info@devstudio.com"
-            >
-              info@devstudio.com</a
-            >
-          </li>
-        </ul>
-
-        <ul class="menu-tel__social-list">
-          <li class="menu-tel__social-item">
-            <a
-              class="menu-tel__social-link menu-tel__inst link"
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noreferer noopener nofollow"
-              aria-label="instagram"
-              >Instagram</a
-            >
-          </li>
-          <li class="menu-tel__social-item">
-            <a
-              class="menu-tel__social-link link"
-              href="https://twitter.com"
-              target="_blank"
-              rel="noreferer noopener nofollow"
-              aria-label="Twitter"
-              >Twitter</a
-            >
-          </li>
-          <li class="menu-tel__social-item">
-            <a
-              class="menu-tel__social-link link"
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noreferer noopener nofollow"
-              aria-label="Facebook"
-              >Facebook</a
-            >
-          </li>
-          <li class="menu-tel__social-item">
-            <a
-              class="menu-tel__social-link link"
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noreferer noopener nofollow"
-              aria-label="LinkedIn"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <button class="menu-tel__close js-close-menu">
-        <svg class="menu-tel__close-button" width="19" height="19">
-          <use href="./images/icons.svg#cross"></use>
-        </svg>
-      </button>
-    </div>
-
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

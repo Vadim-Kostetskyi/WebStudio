@@ -59,6 +59,10 @@
     margin-left: 24px;
     margin-bottom: 4px;
     color: var(--text);
+
+       @media screen and (min-width: 780px) and (max-width: 1199px) {
+      width: 306px;
+    }
   }
   &__subname {
     margin-left: 24px;
@@ -69,6 +73,11 @@
   &__thumb {
     position: relative;
     overflow: hidden;
+  }
+
+  &__img{
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -81,6 +90,9 @@
   justify-content: flex-start;
 
   &__list {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
     flex-basis: calc(
       (100% - (var(--items)) * (var(--indent) - 1)) / var(--items)
     );
@@ -106,6 +118,7 @@
     border: 1px solid #eeeeee;
     border-top: 0;
     padding-top: 20px;
+ 
   }
 
   &__overlay {
@@ -114,10 +127,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding-top: 63px;
     padding-right: 24px;
-    padding-bottom: 63px;
     padding-left: 24px;
+    padding-bottom: 77px;
+      padding-top: 77px;
+      @media screen and (min-width: 1200px) {
+      padding-bottom: 63px;
+      padding-top: 63px;
+    }
+    overflow: hidden;
 
     transform: translatey(100%);
     transition: transform var(--transition-delay);
@@ -132,6 +150,9 @@
   }
 
   &__overlay-desc {
+      @media screen and (max-width: 479px) {
+      max-width: 402px;
+    }
     font-size: 18px;
     line-height: 1.56;
 
