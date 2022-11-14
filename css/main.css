@@ -958,6 +958,7 @@ label {
 
 .modal {
   position: absolute;
+  width: 94%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1314,6 +1315,12 @@ textarea {
   .units__overlay {
     padding-bottom: 63px;
     padding-top: 63px;
+  }
+}
+@media screen and (max_width: 325px) {
+  .units__overlay {
+    padding-bottom: 0;
+    overflow: auto;
   }
 }
 .units__overlay-desc {
